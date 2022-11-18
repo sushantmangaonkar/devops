@@ -7,7 +7,7 @@ pipeline {
 		  }
 	}
     parameters {
-        string(name: 'choice', defaultValue: 'testing-branch', description: 'this is a testing branch?')
+        choice(name: 'choice', defaultValue: 'testing-branch', description: 'this is a testing branch?')
     }
     stages {
         stage('test-branch') {
