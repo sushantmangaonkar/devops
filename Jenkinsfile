@@ -7,7 +7,7 @@ pipeline {
 		  }
 	}
     parameters {
-        choice(name: 'choice', choices: 'master-branch', description: 'this is a testing branch?')
+        choice(name: 'choice',  choices: ['master-branch'], description: 'this is a testing branch?')
     }
     stages {
         stage('master-branch') {
