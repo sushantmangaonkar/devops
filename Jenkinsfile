@@ -7,7 +7,7 @@ pipeline {
 		  }
 	}
     parameters {
-        choice(name: 'choice', defaultValue: 'devlopment-branch', description: 'this is a dev branch?')
+        choice(name: 'choice', choice: 'devlopment-branch', description: 'this is a dev branch?')
     }
     stages {
         stage('dev-branch') {
