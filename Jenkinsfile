@@ -7,7 +7,7 @@ pipeline {
 		  }
 	}
     parameters {
-        choice(name: 'choice', choice: 'software-branch', description: 'this is a software branch?')
+        choice(name: 'choice', choices: 'software-branch', description: 'this is a software branch?')
     }
     stages {
         stage('soft-branch') {
